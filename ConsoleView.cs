@@ -13,7 +13,7 @@ namespace ArchLab6
 
         internal void PrintNewsTopic(NewsTopic topic)
         {
-            Console.WriteLine($"Topic: {topic.Title}, Created at: {topic.CreatedAt}, Views: {topic.ViewsCount}, ImageSrc: {topic.ImageSource}");
+            Console.WriteLine($"Topic: {topic.Title}\nCreated at: {topic.CreatedAt}\nViews: {topic.ViewsCount}\nImageSrc: {topic.ImageSource}");
             Console.WriteLine($"Tags: {String.Join(", ", topic.Tags)}");
         }
 

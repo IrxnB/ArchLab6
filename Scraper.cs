@@ -45,7 +45,7 @@ namespace ArchLab6
 
         private DateOnly getNewsDate(HtmlDocument node) => DateOnly.ParseExact(
                 node.DocumentNode.SelectSingleNode("//div[@class='page-post-info__date']").InnerText,
-                "dd MMMM yyyy",
+                "d MMMM yyyy",
                 ruCulture
             );
 
